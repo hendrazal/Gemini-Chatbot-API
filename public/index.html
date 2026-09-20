@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#f5f2eb" />
+  <title>Gemini AI | Ruang Percakapan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <a class="brand" href="/" aria-label="Gemini AI beranda">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>
+          <strong>gemini</strong>
+          <small>ruang berpikir</small>
+        </span>
+      </a>
+      <div class="header-status" aria-label="Status layanan">
+        <span class="status-dot"></span>
+        <span>Online</span>
+      </div>
+    </header>
+
+    <section class="conversation-panel" aria-label="Percakapan dengan Gemini AI">
+      <div class="conversation-heading">
+        <div>
+          <p class="eyebrow">Percakapan baru</p>
+          <h1>Apa yang sedang<br /><em>kamu pikirkan?</em></h1>
+        </div>
+        <span class="sparkle" aria-hidden="true">✧</span>
+      </div>
+
+      <div id="chat-box" class="chat-box">
+        <div class="welcome-state">
+          <div class="welcome-icon" aria-hidden="true">✦</div>
+          <p class="welcome-title">Halo, saya Gemini.</p>
+          <p class="welcome-copy">Tanyakan apa saja. Mari mengubah rasa ingin tahu menjadi sesuatu yang berarti.</p>
+          <div class="prompt-list" aria-label="Contoh pertanyaan">
+            <span>Jelaskan ide yang rumit</span>
+            <span>Bantu susun rencana</span>
+            <span>Cari inspirasi baru</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-composer">
+        <label class="sr-only" for="user-input">Tulis pesan</label>
+        <input type="text" id="user-input" placeholder="Tulis pesan untuk Gemini..." autocomplete="off" required />
+        <button type="submit" aria-label="Kirim pesan">
+          <span>Kirim</span>
+          <span class="send-icon" aria-hidden="true">↗</span>
+        </button>
+      </form>
+      <p class="composer-note"><span aria-hidden="true">⌘</span> Gemini dapat membuat kesalahan. Periksa kembali jawabannya.</p>
+    </section>
+
+    <footer class="app-footer">
+      <span>AI yang menemani setiap kemungkinan</span>
+      <span class="footer-line"></span>
+      <span>Gemini API</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
